@@ -1,0 +1,5 @@
+portokali: #f06951
+blue: #3f4adb
+green: #436d41
+yellow: #ebb44d
+purple: #d494ff

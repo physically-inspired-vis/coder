@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Physically-inspired Visualizations Coding</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.js"></script>
+</head>
+<body>
+  <div id="mainLayout">
+    <div id="leftPanel">
+      <h2 class="section-title">Visualization</h2>
+      <img id="uploadedImage" style="width: 100%; display: none; margin-top: 10px;" />
+      
+      <div class="control-bar">
+        <div class="example-dropdown-wrapper" id="exampleDropdownWrapper">
+          <button id="exampleDropdownBtn" class="file-label example-btn">Load Example ▾</button>
+          <div id="exampleDropdownList" class="example-dropdown-list"></div>
+        </div>
+
+        <label for="imageInput" class="file-label">📷 Import Image</label>
+
+        <button id="addElement" class="file-label">➕ Add Visual Element</button>
+
+        <label for="importJson" class="file-label">📁 Import JSON</label>
+        <input type="file" id="importJson" accept=".json" style="display: none;" />
+
+        <button id="exportJson" class="file-label">💾 Export JSON</button>
+
+        <a href="https://docs.google.com/document/d/1l9fVNV0WB8G2ko7A7T6pyRBZ33-KIg8rAx7d_QhthsQ/edit?tab=t.0" target="_blank" class="file-label open-link">
+          📖 Code Book 
+          <span class="external-icon">↗</span>
+        </a>
+      </div>
+      
+      <input type="file" id="imageInput" accept="image/*" style="display: none;" />
+      
+      <div class="metadata-block">
+        <div class="metadata-inline-group">
+          <div class="metadata-field coder-field">
+            <label for="coderSelect">Coder</label>
+            <select id="coderSelect">
+              <option value="">-- Select Coder --</option>
+              <option value="Sotiris">Sotiris</option>
+              <option value="Fanis">Fanis</option>
+              <option value="Pierre">Pierre</option>
+              <option value="Consolidated">Consolidated</option>
+            </select>
+          </div>
+
+          <div class="metadata-field title-field">
+            <label for="titleInput">Title</label>
+            <input type="text" id="titleInput" placeholder="Visualization title..." />
+          </div>
+
+          <div class="metadata-field id-field">
+            <label for="idInput">ID</label>
+            <input type="text" id="idInput" placeholder="Unique ID..." />
+          </div>
+
+          <div class="metadata-field presentation-field">
+            <label for="presentationSelect">Presentation</label>
+            <select id="presentationSelect">
+              <option value="">-- Select Type --</option>
+              <option value="Static">Static</option>
+              <option value="Dynamic">Dynamic</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="links">
+          <div class="link-field">
+            <label for="linkInput">Link</label>
+            <input type="text" id="linkInput" placeholder="Instert Link" />
+          </div>
+          
+          <div class="description-field">
+            <label for="descriptionInput">Description</label>
+            <textarea id="descriptionInput" placeholder="Any useful information to the coders..."></textarea>
+          </div>
+        </div>
+
+        <div class="metadata-field data-variable-field">
+          <label for="dataVariableInput">Data Variables</label>
+          <input type="text" id="dataVariableInput" placeholder="Add variable and press Enter" />
+          <div class="data-variable-tags"></div>
+        </div>
+        
+        <div id="metadataVisInfo"></div>
+        <!-- <div id="metadataRealism"></div> -->
+        <div id="metadataSubjective"></div>
+      </div>
+    </div>
+
+    <div id="rightPanel">
+      <h2 class="section-title">Visual Elements</h2>
+      <div id="container"></div>
+    </div>
+  </div>
+
+  <!-- Crop modal -->
+  <div id="cropModal" style="display: none; position: fixed; top: 0; left: 0; 
+    width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); 
+    align-items: center; justify-content: center; z-index: 9999;">
+    <div style="background: white; padding: 20px; border-radius: 8px;">
+      <h3>Crop Image for Visual Element</h3>
+      <img id="cropImage" style="max-width: 80vw; max-height: 60vh;" />
+      <div style="margin-top: 10px; text-align: right;">
+        <button id="confirmCrop">Use Crop</button>
+        <button id="cancelCrop">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
