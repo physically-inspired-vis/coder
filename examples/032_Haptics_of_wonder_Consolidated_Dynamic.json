@@ -43,16 +43,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Intermediate",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Intermediate (Mixed)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "High",
@@ -82,6 +72,7 @@
       "elementType": "Mark",
       "elementDistData": "Intermediate",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -89,6 +80,7 @@
           "physicalAttribute": "structural",
           "comment": "Depending on the object we can have different deformation effects, but the most common is compress.",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Hardness (Asker C + Needle Penetration)",
@@ -99,7 +91,9 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
-          "mechanismCategory": "none",
+          "compoundId": 1,
+          "mechanismCategory": "physics",
+          "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Hardness (Asker C + Needle Penetration)",
           "type": "Simple Materials",
           "materialProperty": [
@@ -114,6 +108,7 @@
           "physicalAttribute": "structural",
           "comment": "Depending on the object we can have different deformation effects, but the most common is compress.",
           "animated": true,
+          "compoundId": 2,
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Rebound Resilience",
@@ -124,7 +119,9 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
-          "mechanismCategory": "none",
+          "compoundId": 1,
+          "mechanismCategory": "physics",
+          "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Hardness (Asker C + Needle Penetration)",
           "type": "Shape",
           "semanticCongruence": "strong"
@@ -133,7 +130,9 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
-          "mechanismCategory": "none",
+          "compoundId": 2,
+          "mechanismCategory": "physics",
+          "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Rebound Resilience",
           "type": "Shape",
           "semanticCongruence": "strong"
@@ -142,7 +141,9 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
-          "mechanismCategory": "none",
+          "compoundId": 2,
+          "mechanismCategory": "physics",
+          "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Rebound Resilience",
           "type": "Simple Materials",
           "materialProperty": [
@@ -156,6 +157,7 @@
           "physicalAttribute": "spatial",
           "comment": "The objects move in some cases, showing the rebound resilience.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Rebound Resilience",
@@ -170,7 +172,8 @@
       "description": "Collection of haptics",
       "elementType": "Collection",
       "elementDistData": "Low",
-      "elementDistReality": "Low",
+      "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [],
@@ -179,6 +182,7 @@
           "physicalAttribute": "groups",
           "comment": "Grid layout.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Other",
           "semanticCongruence": ""

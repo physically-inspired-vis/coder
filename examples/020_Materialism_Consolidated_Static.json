@@ -42,16 +42,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Very high",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Low (Figurative)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "High",
@@ -81,6 +71,7 @@
       "elementType": "Mark",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -88,6 +79,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Material Volume",
           "type": "Size",
@@ -97,6 +89,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Material Type",
           "type": "Simple Materials",
@@ -113,6 +106,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Material Type",
           "type": "Position",
@@ -124,6 +118,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -136,6 +131,7 @@
       "elementType": "Collection",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [],
@@ -144,6 +140,7 @@
           "physicalAttribute": "groups",
           "comment": "The pieces are placed in an organized way next to each other.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Spatial Arrangement - Other",
@@ -157,6 +154,7 @@
       "elementType": "Scene",
       "elementDistData": "Low",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [],
@@ -165,6 +163,7 @@
           "physicalAttribute": "framing",
           "comment": "Clean background and lighting.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -173,6 +172,7 @@
           "physicalAttribute": "framing",
           "comment": "Camera perspective.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""

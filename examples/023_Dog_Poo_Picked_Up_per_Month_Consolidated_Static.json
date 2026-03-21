@@ -41,16 +41,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Very high",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Low (Figurative)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Intermediate",
@@ -80,6 +70,7 @@
       "elementType": "Mark",
       "elementDistData": "High",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "1",
       "comment": "Causal relationship between the element and the data.",
       "visualChannels": [
@@ -87,6 +78,7 @@
           "physicalAttribute": "structural",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Dog Poo Picked Up",
@@ -97,6 +89,7 @@
           "physicalAttribute": "spatial",
           "comment": "Amount of unfolding.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Dog Poo Picked Up",
@@ -107,6 +100,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Person",
           "type": "Position",
@@ -118,6 +112,7 @@
           "physicalAttribute": "geometry",
           "comment": "Trash bags",
           "animated": false,
+          "compoundId": 2,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -126,6 +121,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 2,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -142,7 +138,8 @@
       "description": "Collection of plastic bag rolls",
       "elementType": "Collection",
       "elementDistData": "Intermediate",
-      "elementDistReality": "Intermediate",
+      "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [],
@@ -151,6 +148,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Alignment",
           "semanticCongruence": ""
@@ -161,8 +159,9 @@
     {
       "description": "Grass ground scene",
       "elementType": "Scene",
-      "elementDistData": "High",
+      "elementDistData": "Intermediate",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [],
@@ -171,6 +170,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -179,6 +179,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""

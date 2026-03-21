@@ -43,16 +43,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Intermediate",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Low (Figurative)",
-        "comment": "Literal depiction of the phenomenon and described concept."
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Intermediate",
@@ -82,6 +72,7 @@
       "elementType": "Mark + Unit",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [],
@@ -90,6 +81,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -98,6 +90,7 @@
           "physicalAttribute": "material",
           "comment": "The color of the moons and their tails is matching the planet they orbit around.",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -110,8 +103,8 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": true,
-          "mechanismCategory": "physics",
-          "mechanismSubcategory": "Rigid-Body Mechanics",
+          "compoundId": "",
+          "mechanismCategory": "none",
           "type": "Position",
           "semanticCongruence": ""
         }
@@ -123,6 +116,7 @@
       "elementType": "Collection",
       "elementDistData": "High",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [
@@ -130,7 +124,9 @@
           "physicalAttribute": "material",
           "comment": "Every planet has a different surface.",
           "animated": false,
-          "mechanismCategory": "none",
+          "compoundId": 1,
+          "mechanismCategory": "physics",
+          "mechanismSubcategory": "Rigid-Body Mechanics",
           "dataVariable": "Planet",
           "type": "Simple Materials",
           "materialProperty": [
@@ -139,22 +135,24 @@
             "Reflectance",
             "Emission"
           ],
-          "semanticCongruence": "strong"
+          "semanticCongruence": "weak"
         },
         {
           "physicalAttribute": "spatial",
           "comment": "Each planet is rotating on a different speed.",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "physics",
-          "mechanismSubcategory": "Other",
+          "mechanismSubcategory": "Rigid-Body Mechanics",
           "dataVariable": "Planet",
           "type": "Orientation",
-          "semanticCongruence": "intermediate"
+          "semanticCongruence": "weak"
         },
         {
           "physicalAttribute": "groups",
           "comment": "The number of moons orbiting around the planet.",
           "animated": false,
+          "compoundId": 3,
           "mechanismCategory": "none",
           "dataVariable": "Number of Moons",
           "type": "Count",
@@ -164,15 +162,17 @@
           "physicalAttribute": "groups",
           "comment": "Since the moons are occupying most of the time the same space, we have a case of density besides count as well.",
           "animated": false,
+          "compoundId": 3,
           "mechanismCategory": "none",
           "dataVariable": "Number of Moons",
           "type": "Density",
-          "semanticCongruence": "intermediate"
+          "semanticCongruence": "strong"
         },
         {
           "physicalAttribute": "time",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Planet",
           "type": "",
@@ -182,6 +182,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Planet",
           "type": "Position",
@@ -193,6 +194,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -201,6 +203,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Spatial Arrangement - Path",
@@ -214,6 +217,7 @@
       "elementType": "Collection",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [],
@@ -222,6 +226,7 @@
           "physicalAttribute": "groups",
           "comment": "They are placed in a grid layout.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Other",
           "semanticCongruence": ""
@@ -234,6 +239,7 @@
       "elementType": "Scene",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "4",
       "comment": "",
       "visualChannels": [],
@@ -242,6 +248,7 @@
           "physicalAttribute": "framing",
           "comment": "Space background.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -250,6 +257,7 @@
           "physicalAttribute": "framing",
           "comment": "Space lighting.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Lighting",
           "semanticCongruence": ""
@@ -258,6 +266,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""

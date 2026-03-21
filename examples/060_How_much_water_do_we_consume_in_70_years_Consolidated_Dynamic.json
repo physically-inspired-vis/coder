@@ -44,16 +44,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "High",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Low (Figurative)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Intermediate",
@@ -83,6 +73,7 @@
       "elementType": "Mark",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -90,6 +81,7 @@
           "physicalAttribute": "spatial",
           "comment": "At least for the first bar, we see the water level going up within the containers.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Fluids",
           "dataVariable": "Amount of consumed water",
@@ -100,6 +92,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Water consumption type",
           "type": "Position",
@@ -109,6 +102,7 @@
           "physicalAttribute": "time",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Water consumption type",
           "type": "",
@@ -120,6 +114,7 @@
           "physicalAttribute": "material",
           "comment": "Water material.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -134,6 +129,7 @@
           "physicalAttribute": "geometry",
           "comment": "Water containers.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -146,6 +142,7 @@
       "elementType": "Collection",
       "elementDistData": "Intermediate",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [],
@@ -154,6 +151,7 @@
           "physicalAttribute": "groups",
           "comment": "Horizontal alignment like a 3D bar chart.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Alignment",
           "semanticCongruence": ""
@@ -166,6 +164,7 @@
       "elementType": "Guide",
       "elementDistData": "Intermediate",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -173,6 +172,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Amount of consumed water",
           "type": "Size",
@@ -184,6 +184,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -192,6 +193,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -209,6 +211,7 @@
       "elementType": "Scene",
       "elementDistData": "Intermediate",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [],
@@ -217,6 +220,7 @@
           "physicalAttribute": "framing",
           "comment": "The camera constantly moves to highlight the data of interest.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""
@@ -225,6 +229,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -233,6 +238,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Lighting",
           "semanticCongruence": ""

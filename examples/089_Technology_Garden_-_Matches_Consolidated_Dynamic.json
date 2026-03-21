@@ -47,16 +47,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Intermediate",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Intermediate (Mixed)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Low",
@@ -86,6 +76,7 @@
       "elementType": "Mark",
       "elementDistData": "Low",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -93,6 +84,7 @@
           "physicalAttribute": "geometry",
           "comment": "metaphor of success (blooming)",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Type of points",
           "type": "Shape",
@@ -102,6 +94,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Points",
           "type": "Position",
@@ -113,6 +106,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -130,6 +124,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [
@@ -137,6 +132,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Winner of game",
           "type": "Orientation",
@@ -146,6 +142,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Game",
           "type": "Position",
@@ -157,6 +154,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -165,6 +163,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "",
           "materialProperty": [
@@ -178,6 +177,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "biological",
           "mechanismSubcategory": "Growth",
           "type": "Spatial Arrangement - Path",
@@ -191,6 +191,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [
@@ -198,6 +199,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Set",
           "type": "Position",
@@ -209,6 +211,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "biological",
           "mechanismSubcategory": "Growth",
           "type": "Spatial Arrangement - Path",
@@ -222,6 +225,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "4",
       "comment": "",
       "visualChannels": [
@@ -229,6 +233,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "biological",
           "mechanismSubcategory": "Growth",
           "dataVariable": "Match Time",
@@ -241,6 +246,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -249,6 +255,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -262,6 +269,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "biological",
           "mechanismSubcategory": "Growth",
           "type": "Spatial Arrangement - Path",
@@ -275,6 +283,7 @@
       "elementType": "Scene",
       "elementDistData": "Low",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "5",
       "comment": "",
       "visualChannels": [],
@@ -283,6 +292,7 @@
           "physicalAttribute": "framing",
           "comment": "moving camera",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""

@@ -42,16 +42,6 @@
         "comment": "It might be AI-generated."
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Intermediate",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Low (Figurative)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Low",
@@ -81,6 +71,7 @@
       "elementType": "Mark",
       "elementDistData": "High",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -88,6 +79,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Number of Rooms",
           "type": "Size",
@@ -97,6 +89,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Accommodation category",
           "type": "Simple Materials",
@@ -111,6 +104,7 @@
           "physicalAttribute": "geometry",
           "comment": "Not the overall shape, but the objects inside it.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Accommodation category",
           "type": "Other",
@@ -120,6 +114,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Accommodation category",
           "type": "Position",
@@ -133,7 +128,8 @@
       "description": "Collection of Rooms",
       "elementType": "Collection",
       "elementDistData": "Intermediate",
-      "elementDistReality": "Low",
+      "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [],
@@ -142,6 +138,7 @@
           "physicalAttribute": "groups",
           "comment": "Placed next to each other to create almost a rectangular.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Packing",
           "semanticCongruence": ""
@@ -153,7 +150,8 @@
       "description": "Overall room / scene",
       "elementType": "Scene",
       "elementDistData": "Intermediate",
-      "elementDistReality": "Intermediate",
+      "elementDistReality": "Low",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [],
@@ -162,6 +160,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -170,6 +169,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""

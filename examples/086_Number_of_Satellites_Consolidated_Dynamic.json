@@ -43,16 +43,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Intermediate",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Low (Figurative)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Intermediate",
@@ -82,6 +72,7 @@
       "elementType": "Mark + Unit",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "1",
       "comment": "Direct depiction of the satellite, even though it might not be so recognizable by itself.",
       "visualChannels": [],
@@ -90,6 +81,7 @@
           "physicalAttribute": "material",
           "comment": "There are changes in the emissive material, like it is flickering.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Optics",
           "type": "Simple Materials",
@@ -103,6 +95,7 @@
           "physicalAttribute": "spatial",
           "comment": "The satellites are orbiting around the planet.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Position",
@@ -112,6 +105,7 @@
           "physicalAttribute": "geometry",
           "comment": "Also showing the trajectory.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -124,6 +118,7 @@
       "elementType": "Collection",
       "elementDistData": "High",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [
@@ -131,15 +126,17 @@
           "physicalAttribute": "groups",
           "comment": "Number of satellites in the group.",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "none",
-          "dataVariable": "Number of satellites",
+          "dataVariable": "",
           "type": "Count",
-          "semanticCongruence": "strong"
+          "semanticCongruence": ""
         },
         {
           "physicalAttribute": "time",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Year",
           "type": "",
@@ -149,10 +146,11 @@
           "physicalAttribute": "groups",
           "comment": "I think that here we also have density besides count because the satellites are occupying the same space always.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
-          "dataVariable": "Number of satellites",
+          "dataVariable": "",
           "type": "Density",
-          "semanticCongruence": "strong"
+          "semanticCongruence": ""
         }
       ],
       "contextualAttributes": [
@@ -160,6 +158,7 @@
           "physicalAttribute": "geometry",
           "comment": "The Earth.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -168,6 +167,7 @@
           "physicalAttribute": "material",
           "comment": "The Earth.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -181,6 +181,7 @@
           "physicalAttribute": "spatial",
           "comment": "Orbiting of the Earth.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Orientation",
@@ -194,6 +195,7 @@
       "elementType": "Decoration",
       "elementDistData": "High",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [],
@@ -202,6 +204,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -210,6 +213,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Lighting",
           "semanticCongruence": ""

@@ -44,16 +44,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Low",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "High (Abstract)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Low",
@@ -83,6 +73,7 @@
       "elementType": "Mark",
       "elementDistData": "Intermediate",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -90,6 +81,7 @@
           "physicalAttribute": "spatial",
           "comment": "Growth / weathering / decay.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Other",
           "dataVariable": "Income Reference Categories",
@@ -100,6 +92,7 @@
           "physicalAttribute": "material",
           "comment": "Growth / weathering / decay.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "biological",
           "mechanismSubcategory": "Other",
           "dataVariable": "Income Reference Categories",
@@ -110,15 +103,16 @@
             "Reflectance",
             "Organic Properties"
           ],
-          "semanticCongruence": "intermediate"
+          "semanticCongruence": "weak"
         },
         {
           "physicalAttribute": "geometry",
           "comment": "The shape of the overall mark and the objects inside it.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Other",
-          "dataVariable": "Income per Year",
+          "dataVariable": "Income Reference Categories",
           "type": "Other",
           "semanticCongruence": "weak"
         },
@@ -126,6 +120,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Income per Year",
           "type": "Position",
@@ -140,6 +135,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [],
@@ -148,6 +144,7 @@
           "physicalAttribute": "groups",
           "comment": "Their horizontal placement doesn't seem to follow some pattern.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Other",
           "semanticCongruence": ""

@@ -45,16 +45,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "High",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "High (Abstract)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "High",
@@ -84,6 +74,7 @@
       "elementType": "Mark + Unit",
       "elementDistData": "Low",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [],
@@ -92,6 +83,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -105,6 +97,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -113,6 +106,7 @@
           "physicalAttribute": "spatial",
           "comment": "Gravity falling.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Position",
@@ -126,6 +120,7 @@
       "elementType": "Collection",
       "elementDistData": "Intermediate",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [
@@ -133,6 +128,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Population percentage",
           "type": "Count",
@@ -142,15 +138,17 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Population percentage",
           "type": "Size",
-          "semanticCongruence": "intermediate"
+          "semanticCongruence": "strong"
         },
         {
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Net worth type",
           "type": "Simple Materials",
@@ -163,6 +161,7 @@
           "physicalAttribute": "spatial",
           "comment": "As a group they appear in different parts of the containers.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Net worth type",
           "type": "Position",
@@ -172,6 +171,7 @@
           "physicalAttribute": "time",
           "comment": "Each group appears in different points in time.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Net worth type",
           "type": "",
@@ -183,6 +183,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Spatial Arrangement - Packing",
@@ -196,6 +197,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [
@@ -203,6 +205,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Population percentage",
           "type": "Count",
@@ -212,10 +215,11 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": true,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Population percentage",
           "type": "Size",
-          "semanticCongruence": "intermediate"
+          "semanticCongruence": "strong"
         }
       ],
       "contextualAttributes": [
@@ -223,6 +227,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Spatial Arrangement - Packing",
@@ -232,6 +237,7 @@
           "physicalAttribute": "geometry",
           "comment": "The containers.",
           "animated": false,
+          "compoundId": 2,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -240,6 +246,7 @@
           "physicalAttribute": "material",
           "comment": "The containers.",
           "animated": false,
+          "compoundId": 2,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -258,6 +265,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "4",
       "comment": "",
       "visualChannels": [],
@@ -266,6 +274,7 @@
           "physicalAttribute": "groups",
           "comment": "Standing on the surface of the tray.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Rigid-Body Mechanics",
           "type": "Spatial Arrangement - Alignment",
@@ -279,6 +288,7 @@
       "elementType": "Scene",
       "elementDistData": "Low",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "5",
       "comment": "",
       "visualChannels": [],
@@ -287,6 +297,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""
@@ -295,6 +306,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Lighting",
           "semanticCongruence": ""
@@ -303,6 +315,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""

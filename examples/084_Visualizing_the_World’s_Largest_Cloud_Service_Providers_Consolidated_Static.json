@@ -42,16 +42,6 @@
         "comment": "I think it was made with AI."
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Intermediate",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Intermediate (Mixed)",
-        "comment": "The literal cloud is used to describe a storage cloud."
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Low",
@@ -81,6 +71,7 @@
       "elementType": "Mark",
       "elementDistData": "Low",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -88,6 +79,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Market Share",
           "type": "Size",
@@ -97,6 +89,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Company",
           "type": "Position",
@@ -108,6 +101,7 @@
           "physicalAttribute": "material",
           "comment": "Looking like a cloud.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -121,6 +115,7 @@
           "physicalAttribute": "geometry",
           "comment": "Spheres to look like cloud parts.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -133,6 +128,7 @@
       "elementType": "Collection",
       "elementDistData": "Intermediate",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "2",
       "comment": "There is a metaphorical relationship to the data concept that it the cloud computing market.",
       "visualChannels": [
@@ -140,6 +136,7 @@
           "physicalAttribute": "spatial",
           "comment": "The total size of the cloud can be compared to the smaller parts to understand the market share.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Market Share",
           "type": "Size",
@@ -151,6 +148,7 @@
           "physicalAttribute": "geometry",
           "comment": "Cloud geometry.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -159,6 +157,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Packing",
           "semanticCongruence": ""
@@ -171,6 +170,7 @@
       "elementType": "Decoration",
       "elementDistData": "Intermediate",
       "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "No hierarchy",
       "comment": "",
       "visualChannels": [],
@@ -179,6 +179,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -187,6 +188,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -204,6 +206,7 @@
       "elementType": "Scene",
       "elementDistData": "Intermediate",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "3",
       "comment": "The scene is quite abstract but related to the data concept.",
       "visualChannels": [],
@@ -212,6 +215,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -220,6 +224,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Lighting",
           "semanticCongruence": ""

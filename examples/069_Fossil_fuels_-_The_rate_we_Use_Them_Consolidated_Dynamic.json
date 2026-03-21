@@ -44,16 +44,6 @@
         "comment": "It is made in some game engine."
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Intermediate",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Low (Figurative)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "High",
@@ -83,6 +73,7 @@
       "elementType": "Mark",
       "elementDistData": "High",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -90,6 +81,7 @@
           "physicalAttribute": "spatial",
           "comment": "Growth of the volume of oil (it could be structural as well maybe).",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Fluids",
           "dataVariable": "Volume of Oil Used Worldwide",
@@ -100,6 +92,7 @@
           "physicalAttribute": "time",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Time",
           "type": "",
@@ -111,6 +104,7 @@
           "physicalAttribute": "material",
           "comment": "Oil Material.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -124,6 +118,7 @@
           "physicalAttribute": "structural",
           "comment": "The deformation and waving of the oil.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Fluids",
           "type": "Other",
@@ -137,6 +132,7 @@
       "elementType": "Scene",
       "elementDistData": "Intermediate",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [
@@ -144,6 +140,7 @@
           "physicalAttribute": "spatial",
           "comment": "Functioning as a reference element to give a comparison to the size of the pool.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Volume of Oil Used Worldwide",
           "type": "Size",
@@ -155,6 +152,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -163,6 +161,7 @@
           "physicalAttribute": "framing",
           "comment": "Moving camera.",
           "animated": true,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""
@@ -171,6 +170,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Lighting",
           "semanticCongruence": ""

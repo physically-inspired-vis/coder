@@ -43,16 +43,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "High",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Intermediate (Mixed)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Intermediate",
@@ -82,6 +72,7 @@
       "elementType": "Mark",
       "elementDistData": "High",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -89,6 +80,7 @@
           "physicalAttribute": "spatial",
           "comment": "The log seems like it has been cut by an axe into this piece.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Deformable Solid Mechanics",
           "dataVariable": "Percentage of Deforestation",
@@ -99,6 +91,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Cause of Deforestation",
           "type": "Position",
@@ -110,6 +103,7 @@
           "physicalAttribute": "material",
           "comment": "It is a log of wood, reflecting the data theme.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [
@@ -123,6 +117,7 @@
           "physicalAttribute": "geometry",
           "comment": "Looks like a trunk.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -133,8 +128,9 @@
     {
       "description": "Collection of logs",
       "elementType": "Collection",
-      "elementDistData": "Intermediate",
-      "elementDistReality": "High",
+      "elementDistData": "High",
+      "elementDistReality": "Intermediate",
+      "elementPerceptualRealism": "Intermediate",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [],
@@ -143,6 +139,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Alignment",
           "semanticCongruence": ""
@@ -151,6 +148,7 @@
           "physicalAttribute": "structural",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Deformable Solid Mechanics",
           "type": "Segment / Cut",
@@ -160,6 +158,7 @@
           "physicalAttribute": "geometry",
           "comment": "All together it reminds of a trunk.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""

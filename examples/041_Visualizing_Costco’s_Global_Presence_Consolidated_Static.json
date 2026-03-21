@@ -44,16 +44,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Low",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "Intermediate (Mixed)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "Low",
@@ -83,6 +73,7 @@
       "elementType": "Mark",
       "elementDistData": "Low",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -90,6 +81,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Number of Warehouses",
           "type": "Size",
@@ -99,6 +91,7 @@
           "physicalAttribute": "spatial",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Country",
           "type": "Position",
@@ -108,6 +101,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "dataVariable": "Continent",
           "type": "Simple Materials",
@@ -125,6 +119,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "2",
       "comment": "We consider here only the cart bottom without the surrounding.",
       "visualChannels": [],
@@ -133,6 +128,7 @@
           "physicalAttribute": "groups",
           "comment": "Treemap",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Other",
           "semanticCongruence": ""
@@ -145,6 +141,7 @@
       "elementType": "Scene",
       "elementDistData": "Intermediate",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "3",
       "comment": "Depiction of the cart as a metaphor.",
       "visualChannels": [],
@@ -153,6 +150,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Environment / Background",
           "semanticCongruence": ""
@@ -161,6 +159,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Camera",
           "semanticCongruence": ""
@@ -173,6 +172,7 @@
       "elementType": "Annotation",
       "elementDistData": "Intermediate",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "Low",
       "elementHierarchy": "No hierarchy",
       "comment": "Figurative annotation that also provides context.",
       "visualChannels": [],
@@ -181,6 +181,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Shape",
           "semanticCongruence": ""
@@ -189,6 +190,7 @@
           "physicalAttribute": "material",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "type": "Simple Materials",
           "materialProperty": [

@@ -45,16 +45,6 @@
         "comment": ""
       }
     },
-    "metadataRealism": {
-      "Perceptual Realism": {
-        "value": "Very high",
-        "comment": ""
-      },
-      "Representation Abstraction": {
-        "value": "High (Abstract)",
-        "comment": ""
-      }
-    },
     "metadataSubjective": {
       "Haptics": {
         "value": "High",
@@ -84,6 +74,7 @@
       "elementType": "Mark",
       "elementDistData": "Low",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "1",
       "comment": "",
       "visualChannels": [
@@ -91,6 +82,7 @@
           "physicalAttribute": "material",
           "comment": "The crystal is shaped based on the owner's wallet ID. The crystals remind of the cryptography theme.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Owner's wallet ID and history",
           "type": "Simple Materials",
@@ -105,6 +97,7 @@
           "physicalAttribute": "geometry",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Owner's wallet ID and history",
           "type": "Shape",
@@ -119,6 +112,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "High",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "2",
       "comment": "",
       "visualChannels": [
@@ -126,6 +120,7 @@
           "physicalAttribute": "groups",
           "comment": "",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
           "dataVariable": "Number of owners",
           "type": "Count",
@@ -135,10 +130,11 @@
           "physicalAttribute": "groups",
           "comment": "The way the digital sculpture is composed, the different combinations.",
           "animated": false,
+          "compoundId": 1,
           "mechanismCategory": "none",
-          "dataVariable": "Owner's wallet ID and history",
+          "dataVariable": "Number of owners",
           "type": "Other",
-          "semanticCongruence": "intermediate"
+          "semanticCongruence": "strong"
         }
       ],
       "contextualAttributes": [
@@ -146,6 +142,7 @@
           "physicalAttribute": "groups",
           "comment": "The crystals formation.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "physics",
           "mechanismSubcategory": "Other",
           "type": "Spatial Arrangement - Other",
@@ -159,6 +156,7 @@
       "elementType": "Collection",
       "elementDistData": "Low",
       "elementDistReality": "Low",
+      "elementPerceptualRealism": "High",
       "elementHierarchy": "3",
       "comment": "",
       "visualChannels": [],
@@ -167,6 +165,7 @@
           "physicalAttribute": "framing",
           "comment": "",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Lighting",
           "semanticCongruence": ""
@@ -175,6 +174,7 @@
           "physicalAttribute": "groups",
           "comment": "Grid.",
           "animated": false,
+          "compoundId": "",
           "mechanismCategory": "none",
           "type": "Spatial Arrangement - Other",
           "semanticCongruence": ""
