@@ -1,5 +1,35 @@
 [
   {
+    "id": "001",
+    "title": "Hold Me Longer",
+    "file": "examples/001_Hold_Me_Longer_Consolidated_Static.json"
+  },
+  {
+    "id": "002",
+    "title": "Air Transformed",
+    "file": "examples/002_Air_Transformed_Consolidated_Static.json"
+  },
+  {
+    "id": "003",
+    "title": "Percentage of Catholics",
+    "file": "examples/003_Percentage_of_Catholics_Consolidated_Static.json"
+  },
+  {
+    "id": "004",
+    "title": "Noway Norway",
+    "file": "examples/004_Noway_Norway_Consolidated_Static.json"
+  },
+  {
+    "id": "005",
+    "title": "Garbage Dumps in the Ocean",
+    "file": "examples/005_Garbage_Dumps_in_the_Ocean_Consolidated_Static.json"
+  },
+  {
+    "id": "006",
+    "title": "The strategic markets",
+    "file": "examples/006_The_strategic_markets_Consolidated_Static.json"
+  },
+  {
     "id": "007",
     "title": "Rising Sea Levels",
     "file": "examples/007_Rising_Sea_Levels_Consolidated_Static.json"
@@ -8,6 +38,21 @@
     "id": "008",
     "title": "Nantes Metropole",
     "file": "examples/008_Nantes_Metropole_Consolidated_Static.json"
+  },
+  {
+    "id": "009",
+    "title": "Structure of Daugavpils municipality expenditures",
+    "file": "examples/009_Structure_of_Daugavpils_municipality_expenditures_Consolidated_Static.json"
+  },
+  {
+    "id": "010",
+    "title": "Carbon Dioxide Savings",
+    "file": "examples/010_Carbon_Dioxide_Savings_Consolidated_Static.json"
+  },
+  {
+    "id": "011",
+    "title": "Cargo Leaders",
+    "file": "examples/011_Cargo_Leaders_Consolidated_Static.json"
   },
   {
     "id": "012",
@@ -80,6 +125,11 @@
     "file": "examples/025_Cucumbers_and_Melons_Consolidated_Static.json"
   },
   {
+    "id": "026",
+    "title": "Difficulty of children",
+    "file": "examples/026_Difficulty_of_children_Consolidated_Static.json"
+  },
+  {
     "id": "027",
     "title": "Global Tree Cover Loss",
     "file": "examples/027_Global_Tree_Cover_Loss_Consolidated_Static.json"
@@ -100,6 +150,11 @@
     "file": "examples/030_Garbage_Dumps_in_the_Ocean_Size_Consolidated_Static.json"
   },
   {
+    "id": "031",
+    "title": "The Cost of Wind",
+    "file": "examples/031_The_Cost_of_Wind_Consolidated_Static.json"
+  },
+  {
     "id": "032",
     "title": "Haptics of wonder",
     "file": "examples/032_Haptics_of_wonder_Consolidated_Dynamic.json"
@@ -108,6 +163,26 @@
     "id": "033",
     "title": "State of the World as Population Pyramids",
     "file": "examples/033_State_of_the_World_as_Population_Pyramids_Consolidated_Static.json"
+  },
+  {
+    "id": "034",
+    "title": "Company Value in the Stock Exchange",
+    "file": "examples/034_Company_Value_in_the_Stock_Exchange_Consolidated_Static.json"
+  },
+  {
+    "id": "035",
+    "title": "Map of Corn Production Using Candy Corn",
+    "file": "examples/035_Map_of_Corn_Production_Using_Candy_Corn_Consolidated_Static.json"
+  },
+  {
+    "id": "036",
+    "title": "Digital Pots",
+    "file": "examples/036_Digital_Pots_Consolidated_Static.json"
+  },
+  {
+    "id": "037",
+    "title": "For Every 1 Dollar a White Man Earns",
+    "file": "examples/037_For_Every_1_Dollar_a_White_Man_Earns_Consolidated_Static.json"
   },
   {
     "id": "038",
@@ -120,9 +195,19 @@
     "file": "examples/039_Time_is_Running_Out_2_Consolidated_Dynamic.json"
   },
   {
+    "id": "040",
+    "title": "Blaue Blumen: Handcrafted Offline Data Visualization of Population Density",
+    "file": "examples/040_Blaue_Blumen__Handcrafted_Offline_Data_Visualization_of_Population_Density_Consolidated_Dynamic.json"
+  },
+  {
     "id": "041",
     "title": "Visualizing Costco’s Global Presence",
     "file": "examples/041_Visualizing_Costco’s_Global_Presence_Consolidated_Static.json"
+  },
+  {
+    "id": "042",
+    "title": "Reasons for women jurors",
+    "file": "examples/042_Reasons_for_women_jurors_Consolidated_Static.json"
   },
   {
     "id": "043",
@@ -133,6 +218,16 @@
     "id": "044",
     "title": "Rooms on the Market",
     "file": "examples/044_Rooms_on_the_Market_Consolidated_Static.json"
+  },
+  {
+    "id": "045",
+    "title": "Who's Your Father Star Wars",
+    "file": "examples/045_Who's_Your_Father_Star_Wars_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "046",
+    "title": "Most Airports Worldwide",
+    "file": "examples/046_Most_Airports_Worldwide_Consolidated_Static.json"
   },
   {
     "id": "047",
@@ -150,6 +245,11 @@
     "file": "examples/049_Think_Globally,_Visualise_Locally_Consolidated_Dynamic.json"
   },
   {
+    "id": "050",
+    "title": "Coral Cities",
+    "file": "examples/050_Coral_Cities_Consolidated_Dynamic.json"
+  },
+  {
     "id": "051",
     "title": "Make sense of it all: Mapping Movement",
     "file": "examples/051_Make_sense_of_it_all__Mapping_Movement_Consolidated_Dynamic.json"
@@ -163,6 +263,11 @@
     "id": "053",
     "title": "Forestry Management Corruption",
     "file": "examples/053_Forestry_Management_Corruption_Consolidated_Static.json"
+  },
+  {
+    "id": "054",
+    "title": "Commuter Flowers",
+    "file": "examples/054_Commuter_Flowers_Consolidated_Static.json"
   },
   {
     "id": "055",
@@ -180,6 +285,11 @@
     "file": "examples/057_Cost_of_Living_in_LA_Consolidated_Static.json"
   },
   {
+    "id": "058",
+    "title": "The Gradient of Naturality",
+    "file": "examples/058_The_Gradient_of_Naturality_Consolidated_Static.json"
+  },
+  {
     "id": "059",
     "title": "The Growing Problem of Mining Tailings",
     "file": "examples/059_The_Growing_Problem_of_Mining_Tailings_Consolidated_Static.json"
@@ -190,9 +300,29 @@
     "file": "examples/060_How_much_water_do_we_consume_in_70_years_Consolidated_Dynamic.json"
   },
   {
+    "id": "061",
+    "title": "Per capita freshwater withdrawal",
+    "file": "examples/061_Per_capita_freshwater_withdrawal_Consolidated_Static.json"
+  },
+  {
+    "id": "062",
+    "title": "The Tallest Tress in the World",
+    "file": "examples/062_The_Tallest_Tress_in_the_World_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "063",
+    "title": "Hurricane Size Comparison",
+    "file": "examples/063_Hurricane_Size_Comparison_Consolidated_Dynamic.json"
+  },
+  {
     "id": "064",
     "title": "OG:CRYSTALS",
     "file": "examples/064_OG_CRYSTALS_Consolidated_Static.json"
+  },
+  {
+    "id": "065",
+    "title": "Geothermal energy potential in the US",
+    "file": "examples/065_Geothermal_energy_potential_in_the_US_Consolidated_Static.json"
   },
   {
     "id": "066",
@@ -255,6 +385,31 @@
     "file": "examples/076_Surreal_Speed_Comparison_Consolidated_Dynamic.json"
   },
   {
+    "id": "077",
+    "title": "Asteroids Size Comparison",
+    "file": "examples/077_Asteroids_Size_Comparison_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "078",
+    "title": "Births and Deaths Rate",
+    "file": "examples/078_Births_and_Deaths_Rate_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "079",
+    "title": "Elephant Rocket Fuel",
+    "file": "examples/079_Elephant_Rocket_Fuel_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "080",
+    "title": "Human Visits to Space",
+    "file": "examples/080_Human_Visits_to_Space_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "081",
+    "title": "New York City's Greenhouse Gas Emissions",
+    "file": "examples/081_New_York_City's_Greenhouse_Gas_Emissions_Consolidated_Dynamic.json"
+  },
+  {
     "id": "082",
     "title": "Number of deaths in the WW2",
     "file": "examples/082_Number_of_deaths_in_the_WW2_Consolidated_Dynamic.json"
@@ -268,6 +423,11 @@
     "id": "084",
     "title": "Visualizing the World’s Largest Cloud Service Providers",
     "file": "examples/084_Visualizing_the_World’s_Largest_Cloud_Service_Providers_Consolidated_Static.json"
+  },
+  {
+    "id": "085",
+    "title": "Europe's $2 Trillion Infrastructure Investment Deficit",
+    "file": "examples/085_Europe's_$2_Trillion_Infrastructure_Investment_Deficit_Consolidated_Static.json"
   },
   {
     "id": "086",
@@ -298,5 +458,65 @@
     "id": "091",
     "title": "Softness Simulation",
     "file": "examples/091_Softness_Simulation_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "092",
+    "title": "Total Mass of Biosphere",
+    "file": "examples/092_Total_Mass_of_Biosphere_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "093",
+    "title": "Antibiotics Consumption Levels in Europe",
+    "file": "examples/093_Antibiotics_Consumption_Levels_in_Europe_Consolidated_Static.json"
+  },
+  {
+    "id": "094",
+    "title": "Microorganisms in Perspective",
+    "file": "examples/094_Microorganisms_in_Perspective_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "095",
+    "title": "The Biggest Buildings That Do Not Exist",
+    "file": "examples/095_The_Biggest_Buildings_That_Do_Not_Exist_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "096",
+    "title": "World in Slices",
+    "file": "examples/096_World_in_Slices_Sotiris_Static.json"
+  },
+  {
+    "id": "097",
+    "title": "Smallpox Deaths",
+    "file": "examples/097_Smallpox_Deaths_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "098",
+    "title": "Billionaires Earnings",
+    "file": "examples/098_Billionaires_Earnings_Consolidated_Dynamic.json"
+  },
+  {
+    "id": "099",
+    "title": "What Creatives Do",
+    "file": "examples/099_What_Creatives_Do_Consolidated_Static.json"
+  },
+  {
+    "id": "100",
+    "title": "Europe's Chocolate Consumption",
+    "file": "examples/100_Europe's_Chocolate_Consumption_Consolidated_Static.json"
+  },
+  {
+    "id": "101",
+    "title": "How Much Power Do Data Centers Use",
+    "file": "examples/101_How_Much_Power_Do_Data_Centers_Use_Consolidated_Static.json"
+  },
+  {
+    "id": "102",
+    "title": "Which Countries Buy the Most US Coal",
+    "file": "examples/102_Which_Countries_Buy_the_Most_US_Coal_Consolidated_Static.json"
+  },
+  {
+    "id": "103",
+    "title": "Countries With the Highest Remittance Costs",
+    "file": "examples/103_Countries_With_the_Highest_Remittance_Costs_Consolidated_Static.json"
   }
 ]
