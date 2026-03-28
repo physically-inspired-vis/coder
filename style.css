@@ -24,18 +24,18 @@ body {
   background-color: var(--gray-dark);
   color: var(--text-light);
   margin: 0;
-  padding: 20px;
+  padding: 10px;
 }
 
 #mainLayout {
   display: flex;
-  height: calc(100vh - 40px);
-  gap: 24px;
+  height: calc(100vh - 20px);
+  gap: 12px;
 }
 
 #leftPanel {
   width: 45%;
-  padding: 24px;
+  padding: 12px;
   overflow-y: auto;
   box-sizing: border-box;
   background-color: var(--gray-medium);
@@ -43,7 +43,7 @@ body {
   border: 1px solid var(--gray-light);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 #container {
@@ -58,8 +58,8 @@ button {
   font-family: var(--font-main);
   background-color: var(--text-light);
   color: var(--gray-dark);
-  padding: 10px 16px;
-  font-size: 14px;
+  padding: 6px 12px;
+  font-size: 13px;
   border: none;
   border-radius: 6px;
   font-weight: 600;
@@ -151,8 +151,8 @@ button:hover {
   background: var(--gray-dark);
   border: 1px solid var(--gray-light);
   border-radius: 10px;
-  padding: 24px;
-  margin-bottom: 24px;
+  padding: 12px;
+  margin-bottom: 12px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -160,7 +160,7 @@ input,
 select,
 textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 6px 10px;
   font-size: 14px;
   font-family: var(--font-main);
   border: 1px solid var(--gray-light);
@@ -182,27 +182,27 @@ textarea:focus {
 
 textarea {
   min-height: 16px;
-  height: 42px;  
+  height: 34px;
   resize: vertical;
   max-width: 100%;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .metadata-panel h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border-bottom: 2px solid var(--lime);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
 .metadata-panel label {
   font-weight: 600;
   font-size: 13px;
-  margin: 8px 0 4px;
+  margin: 4px 0 2px;
   display: block;
   color: var(--text-light);
 }
@@ -210,9 +210,9 @@ textarea {
 .category-header {
   font-weight: 700;
   font-size: 13px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  padding-bottom: 3px;
   border-bottom: 2px solid var(--lime);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -261,7 +261,7 @@ textarea {
 
 #rightPanel {
   flex: 1;
-  padding: 24px;
+  padding: 12px;
   overflow-y: auto;
   background-color: var(--gray-medium);
   border-radius: 8px;
@@ -269,13 +269,13 @@ textarea {
 }
 
 .section-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text-light);
   border-bottom: 2px solid var(--lime);
-  margin-bottom: 20px;
-  padding-bottom: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
   letter-spacing: 0.5px;
 }
 
@@ -292,15 +292,19 @@ textarea {
 
 .visual-element-thumb img {
   width: 100%;
+  max-height: 250px; /* ← adjust this value to taste */
+  object-fit: contain;
   border: 1px solid #ccc;
   border-radius: 6px;
+  display: block;
+  margin: 0 auto;
 }
 
 .visual-element-inputs {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
 .visual-element-header {
@@ -319,7 +323,7 @@ textarea {
 
 .metadata-inline-group {
   display: flex;
-  gap: 12px;
+  gap: 6px;
   flex-wrap: nowrap;
   width: 100%;
 }
@@ -373,7 +377,7 @@ textarea {
 .metadata-block {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .file-label {

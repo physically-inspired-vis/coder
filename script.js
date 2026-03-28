@@ -546,15 +546,21 @@ function addVisualElement(data = {}) {
 
   // Thumbnail (left side)
   const thumbnailWrapper = document.createElement("div");
-  thumbnailWrapper.style.width = "25%";
   thumbnailWrapper.style.display = "flex";
   thumbnailWrapper.style.alignItems = "center";
+  thumbnailWrapper.style.flexShrink = "0";
 
   if (data.thumbnail) {
     const thumb = document.createElement("img");
     thumb.src = data.thumbnail;
     thumb.alt = "Cropped area";
-    thumb.style.width = "100%";
+    thumb.style.width = "auto";
+    thumb.style.minWidth = "110px";  /* ← min size cap */
+    thumb.style.minHeight = "110px"; /* ← min size cap */
+    thumb.style.maxWidth = "270px";  /* ← max width cap */
+    thumb.style.maxHeight = "270px"; /* ← max height cap */
+    thumb.style.objectFit = "contain";
+    thumb.style.display = "block";
     thumb.style.border = "1px solid #ccc";
     thumb.style.borderRadius = "6px";
     thumbnailWrapper.appendChild(thumb);
