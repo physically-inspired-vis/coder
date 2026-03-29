@@ -198,7 +198,7 @@ function createCommentToggle(commentElement, initialVisible = false) {
 
 function resetInfoAndMetadata() {
   // Top info
-  ["coderSelect", "titleInput", "idInput", "presentationSelect", "linkInput", "descriptionInput"].forEach(id => {
+  ["titleInput", "idInput", "presentationSelect", "linkInput", "descriptionInput"].forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
     if (el.tagName === "SELECT") {
@@ -244,7 +244,7 @@ function handleImport(event) {
 function loadExampleData(data) {
   resetInfoAndMetadata();
 
-  document.getElementById("coderSelect").value = data.coder || "";
+  // document.getElementById("coderSelect").value = data.coder || "";
   document.getElementById("titleInput").value = data.title || "";
   document.getElementById("idInput").value = data.id || "";
   document.getElementById("presentationSelect").value = data.presentation || "";
@@ -1327,7 +1327,7 @@ document.getElementById("exportJson").addEventListener("click", () => {
     });
   });
 
-  const coder = document.getElementById("coderSelect").value || "";
+  // const coder = document.getElementById("coderSelect").value || "";
   const title = document.getElementById("titleInput").value || "";
   const id = document.getElementById("idInput").value || "";
   const presentation = document.getElementById("presentationSelect").value || "";
@@ -1341,7 +1341,7 @@ document.getElementById("exportJson").addEventListener("click", () => {
   const json = {
     title,
     id,
-    coder,
+    // coder,
     presentation,
     description,
     link,
