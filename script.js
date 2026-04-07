@@ -156,6 +156,13 @@ document.getElementById("addElement").addEventListener("click", () => {
 document.getElementById("importJson").addEventListener("change", handleImport);
 
 document.addEventListener("DOMContentLoaded", function () {
+  fetch("examples/005_Garbage_Dumps_in_the_Ocean_Consolidated_Static.json")
+    .then(r => r.json())
+    .then(data => loadExampleData(data))
+    .catch(err => console.warn("Could not load default example:", err));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const imageInput = document.getElementById("imageInput");
   const uploadedImage = document.getElementById("uploadedImage");
 
