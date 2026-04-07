@@ -1354,7 +1354,7 @@ document.getElementById("exportJson").addEventListener("click", () => {
   const id_title = document.getElementById("idInput").value.trim().replace(/\s+/g, "_");
   const title_title = document.getElementById("titleInput").value.trim().replace(/\s+/g, "_");
 
-  const fileName = `${id_title || "noID"}_${title_title || "noTitle"}_${coder || "noCoder"}_${presentation || "noPresentation"}.json`;
+  const fileName = `${id_title || "noID"}_${title_title || "noTitle"}_${presentation || "noPresentation"}.json`;
 
   const blob = new Blob([JSON.stringify(json, null, 2)], {
     type: "application/json"
