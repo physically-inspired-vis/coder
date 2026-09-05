@@ -376,7 +376,7 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text);
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid var(--text);
   margin-bottom: 10px;
   padding-bottom: 5px;
   letter-spacing: 0.5px;
@@ -1054,24 +1054,9 @@ select[multiple] option:checked,
   font-weight: 600;
 }
 
-/* ============================================================
-   Panel accents
-   Left panel (the visualization's own metadata) stays neutral; the
-   right panel - visual elements and their realism / familiarity /
-   metaphor dimensions - carries the orange of the dimension icons.
-   ============================================================ */
-#leftPanel .section-title {
-  border-bottom-color: var(--text);
-}
-
-#rightPanel .section-title {
-  border-bottom-color: var(--orange);
-}
-
-/* comment toggle on the realism / familiarity / proximity row */
+/* The comment toggle on the realism / familiarity / metaphor row is
+   marked with the orange of those icons - underline only, no fill. */
 .element-semantic-row .comment-toggle {
-  background-color: var(--orange-soft);
-  color: var(--orange);
   border-bottom: 2px solid transparent;   /* reserve the space so nothing jumps */
 }
 
