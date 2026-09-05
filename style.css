@@ -13,7 +13,7 @@
   /* brand */
   --accent: #3f4adb;
   --accent-strong: #333dbd;
-  --accent-soft: rgba(63, 74, 219, 0.10);
+  --select-highlight: #e4e6eb;   /* selected rows in the multi-selects */
   --accent-ring: rgba(63, 74, 219, 0.28);
   --on-accent: #ffffff;
 
@@ -74,7 +74,7 @@
 
   --accent: #6c75ef;
   --accent-strong: #838bff;
-  --accent-soft: rgba(108, 117, 239, 0.16);
+  --select-highlight: #4a4a4a;
   --accent-ring: rgba(108, 117, 239, 0.35);
   --on-accent: #10121c;
 
@@ -1045,11 +1045,12 @@ textarea {
   box-shadow: var(--shadow-pop);
 }
 
-/* Selected rows in the multi-selects use the accent tint instead of the
-   browser's default grey band */
+/* Selected rows in the multi-selects: a plain grey band that follows the
+   theme (the gradient is the only way to override Chrome's own colour on
+   an unfocused select) */
 select[multiple] option:checked,
 .material-props-multi option:checked {
-  background: var(--accent-soft) linear-gradient(0deg, var(--accent-soft), var(--accent-soft));
+  background: var(--select-highlight) linear-gradient(0deg, var(--select-highlight), var(--select-highlight));
   color: var(--text);
   font-weight: 600;
 }
