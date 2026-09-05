@@ -296,7 +296,7 @@ textarea {
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid var(--text);
   padding-bottom: 4px;
 }
 
@@ -1062,4 +1062,10 @@ select[multiple] option:checked,
 
 .element-semantic-row .comment-toggle.active {
   border-bottom-color: var(--orange);
+}
+
+/* The left-column metadata panels stay neutral - no accent colour,
+   so their comment toggles are underlined in the text colour too. */
+.metadata-panel .comment-toggle.active {
+  border-bottom-color: var(--text);
 }
