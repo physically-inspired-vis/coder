@@ -1,28 +1,118 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
 
+/* ============================================================
+   THEME TOKENS
+   Dark is the default. <html data-theme="light"> flips to the light
+   palette (toggle sits in the bottom-right corner).
+   Accent = #3f4adb, the indigo of the physical-attribute icons.
+   ============================================================ */
 :root {
-  --black: #111111;
-  --gray-dark: #1e1e1e;
-  --gray-medium: #2b2b2b;
-  --gray-light: #3a3a3a;
-  --lime: #c7ff00;
-  --text-light: #f5f5f5;
+  color-scheme: light;
+
+  /* brand */
+  --accent: #3f4adb;
+  --accent-strong: #333dbd;
+  --accent-soft: rgba(63, 74, 219, 0.10);
+  --accent-ring: rgba(63, 74, 219, 0.28);
+  --on-accent: #ffffff;
+
+  /* surfaces */
+  --bg: #e9eaef;
+  --surface: #ffffff;          /* panels */
+  --surface-2: #fbfbfd;        /* cards inside panels */
+  --surface-3: #eef0f4;        /* subtle fills */
+  --input-bg: #ffffff;
+  --row-bg: #ffffff;
+  --area-bg: #f4f5f9;
+  --overlay: #ffffff;          /* popovers / dropdowns */
+  --surface-hover: rgba(20, 24, 40, 0.06);
+
+  /* lines + type */
+  --border: #e2e5ec;
+  --border-light: #e2e5ec;
+  --text: #16181d;
+  --text-muted: #6a7080;
+
+  /* controls */
+  --btn-bg: #f1f2f6;
+  --btn-text: #1b1d23;
+  --btn-border: #dfe2ea;
+
+  --chip-bg: #eef0f5;
+  --chip-text: #1b1d23;
+  --chip-border: #dfe2ea;
+  --chip-hover: #e4e7ee;
+
+  --soft-btn-bg: rgba(63, 74, 219, 0.10);
+  --soft-btn-text: #3f4adb;
+
+  --danger: #d64545;
+  --delete-bubble: #ffffff;
+  --delete-bubble-border: rgba(20, 24, 40, 0.16);
+
+  --shadow-card: 0 1px 2px rgba(16, 20, 30, 0.06), 0 6px 16px rgba(16, 20, 30, 0.05);
+  --shadow-pop: 0 12px 30px rgba(16, 20, 30, 0.16);
+
   --font-main: 'Space Grotesk', sans-serif;
   --anim-size: 35px;                 /* ← exact overall button size you want */
   --anim-border-w: 1px;
   --anim-radius: 4px;
-  --anim-border: var(--gray-light);
-  --anim-hover: #64748b;
-  --anim-accent: var(--lime);
-  --anim-focus: rgba(199, 255, 0, 0.35);
+  --anim-border: var(--border);
+  --anim-hover: var(--accent);
+  --anim-accent: var(--accent);
+  --anim-focus: var(--accent-ring);
   --anim-off-opacity: 0.55;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --accent: #6c75ef;
+  --accent-strong: #838bff;
+  --accent-soft: rgba(108, 117, 239, 0.16);
+  --accent-ring: rgba(108, 117, 239, 0.35);
+  --on-accent: #10121c;
+
+  --bg: #1e1e1e;
+  --surface: #2b2b2b;
+  --surface-2: #1e1e1e;
+  --surface-3: #3a3a3a;
+  --input-bg: #2b2b2b;
+  --row-bg: rgba(255, 255, 255, 0.03);
+  --area-bg: rgba(73, 73, 73, 0.4);
+  --overlay: rgba(32, 32, 32, 0.97);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+
+  --border: #3a3a3a;
+  --border-light: #3a3a3a;
+  --text: #f5f5f5;
+  --text-muted: #a6a6a6;
+
+  --btn-bg: #f5f5f5;
+  --btn-text: #1e1e1e;
+  --btn-border: transparent;
+
+  --chip-bg: #eeeeee;
+  --chip-text: #000000;
+  --chip-border: #cccccc;
+  --chip-hover: #dddddd;
+
+  --soft-btn-bg: #1e3a5f;
+  --soft-btn-text: #a8c8f0;
+
+  --danger: #ff6b6b;
+  --delete-bubble: #111111d3;
+  --delete-bubble-border: rgba(0, 0, 0, 0.25);
+
+  --shadow-card: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-pop: 0 10px 26px rgba(0, 0, 0, 0.45);
 }
 
 body {
   font-family: var(--font-main);
-  background-color: var(--gray-dark);
-  color: var(--text-light);
+  background-color: var(--bg);
+  color: var(--text);
   margin: 0;
   padding: 10px;
 }
@@ -38,9 +128,10 @@ body {
   padding: 12px;
   overflow-y: auto;
   box-sizing: border-box;
-  background-color: var(--gray-medium);
+  background-color: var(--surface);
   border-radius: 8px;
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -56,11 +147,11 @@ body {
 
 button {
   font-family: var(--font-main);
-  background-color: var(--text-light);
-  color: var(--gray-dark);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
   padding: 6px 12px;
   font-size: 13px;
-  border: none;
+  border: 1px solid var(--btn-border);
   border-radius: 6px;
   font-weight: 600;
   text-transform: uppercase;
@@ -69,8 +160,9 @@ button {
 }
 
 button:hover {
-  background-color: var(--lime);
-  color: var(--black);
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
 }
 
 .control-bar {
@@ -86,13 +178,15 @@ button:hover {
 }
 
 .example-btn {
-  background-color: #1e3a5f;
-  color: #a8c8f0;
+  background-color: var(--soft-btn-bg);
+  border-color: transparent;
+  color: var(--soft-btn-text);
 }
 
 .example-btn:hover {
-  background-color: #2a5298;
-  color: #ffffff;
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
 }
 
 .example-dropdown-list {
@@ -101,13 +195,13 @@ button:hover {
   top: calc(100% + 4px);
   left: 0;
   z-index: 1000;
-  background: var(--gray-dark);
-  border: 1px solid var(--gray-mid, #444);
+  background: var(--overlay);
+  border: 1px solid var(--border);
   border-radius: 6px;
   min-width: 280px;
   max-height: 320px;
   overflow-y: auto;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: var(--shadow-pop);
 }
 
 .example-dropdown-list.open {
@@ -121,8 +215,8 @@ button:hover {
   padding: 8px 14px;
   background: none;
   border: none;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  color: var(--text-light);
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
   font-size: 13px;
   cursor: pointer;
   white-space: nowrap;
@@ -135,8 +229,8 @@ button:hover {
 }
 
 .example-dropdown-list button:hover {
-  background: var(--lime);
-  color: var(--black);
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
 .control-bar input[type="file"],
@@ -148,12 +242,12 @@ button:hover {
 
 .element-wrapper,
 .metadata-panel {
-  background: var(--gray-dark);
-  border: 1px solid var(--gray-light);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px;
   margin-bottom: 12px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-card);
 }
 
 input,
@@ -163,10 +257,10 @@ textarea {
   padding: 6px 10px;
   font-size: 14px;
   font-family: var(--font-main);
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--border);
   border-radius: 6px;
-  background-color: var(--gray-medium);
-  color: var(--text-light);
+  background-color: var(--input-bg);
+  color: var(--text);
   /* margin-bottom: 12px; */
   margin-left: 5px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -175,8 +269,8 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--lime);
-  box-shadow: 0 2px 0 var(--lime);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-ring);
   outline: none;
 }
 
@@ -195,7 +289,7 @@ textarea {
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 2px solid var(--lime);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 4px;
 }
 
@@ -204,7 +298,7 @@ textarea {
   font-size: 13px;
   margin: 4px 0 2px;
   display: block;
-  color: var(--text-light);
+  color: var(--text-muted);
 }
 
 .category-header {
@@ -213,10 +307,10 @@ textarea {
   margin-top: 10px;
   margin-bottom: 6px;
   padding-bottom: 3px;
-  border-bottom: 2px solid var(--lime);
+  border-bottom: 2px solid var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: var(--text-light);
+  color: var(--text);
 }
 
 .attribute-container {
@@ -245,7 +339,8 @@ textarea {
   align-items: center;
   display: flex;
   /* transition: all 0.3s ease; */
-  background-color: var(--gray-light);
+  background-color: var(--surface-3);
+  color: var(--text);
 }
 
 .comment-toggle.active {
@@ -256,24 +351,25 @@ textarea {
   justify-content: center;
   align-items: center;
   display: flex;
-  border-bottom: 2px solid var(--lime);
+  border-bottom: 2px solid var(--accent);
 }
 
 #rightPanel {
   flex: 1;
   padding: 12px;
   overflow-y: auto;
-  background-color: var(--gray-medium);
+  background-color: var(--surface);
   border-radius: 8px;
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
 }
 
 .section-title {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-light);
-  border-bottom: 2px solid var(--lime);
+  color: var(--text);
+  border-bottom: 2px solid var(--accent);
   margin-bottom: 10px;
   padding-bottom: 5px;
   letter-spacing: 0.5px;
@@ -294,7 +390,7 @@ textarea {
   width: 100%;
   max-height: 250px; /* ← adjust this value to taste */
   object-fit: contain;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
   border-radius: 6px;
   display: block;
   margin: 0 auto;
@@ -383,8 +479,9 @@ textarea {
 .file-label {
   display: inline-block;
   padding: 8px 14px;
-  background-color: var(--text-light);
-  color: var(--gray-dark);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-border);
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
@@ -396,8 +493,9 @@ textarea {
 }
 
 .file-label:hover {
-  background-color: var(--lime);
-  color: var(--black);
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
 }
 
 .file-label.open-link {
@@ -415,9 +513,9 @@ textarea {
   font-size: 14px;
   padding: 10px 12px;
   border-radius: 6px;
-  background-color: var(--gray-medium);
-  color: var(--text-light);
-  border: 1px solid var(--gray-light);
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
   box-sizing: border-box;
 }
 
@@ -431,10 +529,10 @@ textarea {
 /* Each individual tag */
 .data-variable-tag {
   padding: 4px 8px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--chip-border);
   border-radius: 4px;
-  background-color: #eee;
-  color: #000000;
+  background-color: var(--chip-bg);
+  color: var(--chip-text);
   cursor: pointer;
   font-size: 0.9rem;
   user-select: none;
@@ -442,7 +540,7 @@ textarea {
 }
 
 .data-variable-tag:hover {
-  background-color: #ddd;
+  background-color: var(--chip-hover);
 }
 
 .attribute-type-select {
@@ -537,15 +635,15 @@ select[multiple],
   border: 1px solid var(--border-light);
   border-radius: 10px;
   /* background: var(--card); */
-  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+  box-shadow: var(--shadow-pop);
   white-space: nowrap;
   top: 50% !important;
   left: calc(var(--anim-size) + 8px) !important; /* 8px gap to the right */
   transform: translateY(-50%) !important;
   z-index: 3000;
 
-  border: 1px solid var(--border-light);
-  background: rgba(32, 32, 32, 0.96);          
+  border: 1px solid var(--border);
+  background: var(--overlay);
 }
 
 .mech-btn {
@@ -628,8 +726,7 @@ select[multiple],
   --area-pad-y: 6px;
   --area-pad-x: 8px;
   --area-radius: 10px;
-  --area-bg: rgba(73, 73, 73, 0.4);    /* set to 'transparent' if you want outline-only */
-  --area-border: var(--border-light);
+  --area-border: var(--border);
 }
 
 /* rows align like the rest of your UI */
@@ -687,7 +784,7 @@ select[multiple],
   border: 1px solid transparent; border-radius: var(--anim-radius);
   background: transparent; cursor: pointer;
 }
-.mech-btn:hover{ background: rgba(255,255,255,.06); }
+.mech-btn:hover{ background: var(--surface-hover); }
 .mech-btn[aria-pressed="true"]{ border-color: var(--accent); }
 .mech-btn img{
   width: calc(var(--anim-size) - 6px);
@@ -703,10 +800,10 @@ select[multiple],
 
 /* Row separator card */
 .attribute-row {
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 10px;                 /* space so the panel borders don’t touch the row edge */
-  background: rgba(255,255,255,0.03);
+  background: var(--row-bg);
 }
 
 /* keep overlays (like the mechanism menu) visible past the border */
@@ -738,27 +835,27 @@ select[multiple],
   display: grid;
   place-items: center;
 
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--border);
   border-radius: 6px;
   background: transparent !important;  /* don't inherit global button styles */
-  color: #ff6b6b;
+  color: var(--danger);
   padding: 0;
   line-height: 0;
   cursor: pointer;
 }
 
 .row-delete:hover{
-  background: rgba(255,255,255,.06) !important;
-  border-color: var(--gray-light);
+  background: var(--surface-hover) !important;
+  border-color: var(--border);
 }
 
 /* Row separator card */
 .attribute-row {
   position: relative;
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 10px 40px 10px 10px;  /* room for the X on the right */
-  background: rgba(255,255,255,0.03);
+  background: var(--row-bg);
 }
 
 /* floating delete button with white circle */
@@ -774,14 +871,14 @@ select[multiple],
   display: grid;
   place-items: center;
 
-  /* the white circle */
-  background: #111111d3 !important;
-  border: 1px solid rgba(0,0,0,.25);
+  /* the floating circle */
+  background: var(--delete-bubble) !important;
+  border: 1px solid var(--delete-bubble-border);
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,.25);
 
   /* the red X */
-  color: #ff5252;
+  color: var(--danger);
   padding: 0 !important;
   line-height: 0;
   cursor: pointer;
@@ -860,3 +957,92 @@ select[multiple],
 
 
 
+
+
+/* ============================================================
+   Light / dark toggle
+   A quiet 30px puck in the bottom-right corner: mostly invisible
+   until you hover it. Theme lives on <html data-theme="...">.
+   ============================================================ */
+.theme-toggle {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 6000;
+
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-muted);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 160ms ease, color 160ms ease,
+              border-color 160ms ease, transform 160ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  opacity: 1;
+  background: var(--surface);
+  color: var(--accent);
+  border-color: var(--accent);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.theme-toggle svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* show the moon while light is active (click = go dark), sun while dark is */
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* gentle cross-fade when the theme flips */
+body,
+#leftPanel,
+#rightPanel,
+.element-wrapper,
+.metadata-panel,
+.attribute-row,
+.row-area,
+.comment-area,
+input,
+select,
+textarea {
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+/* Crop modal follows the theme too */
+.crop-dialog {
+  background: var(--surface);
+  color: var(--text);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-pop);
+}
+
+/* Selected rows in the multi-selects use the accent tint instead of the
+   browser's default grey band */
+select[multiple] option:checked,
+.material-props-multi option:checked {
+  background: var(--accent-soft) linear-gradient(0deg, var(--accent-soft), var(--accent-soft));
+  color: var(--text);
+  font-weight: 600;
+}

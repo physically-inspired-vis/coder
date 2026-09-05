@@ -571,7 +571,7 @@ function addVisualElement(data = {}) {
     thumb.style.maxHeight = "270px"; /* ← max height cap */
     thumb.style.objectFit = "contain";
     thumb.style.display = "block";
-    thumb.style.border = "1px solid #ccc";
+    thumb.style.border = "1px solid var(--border)";
     thumb.style.borderRadius = "6px";
     thumbnailWrapper.appendChild(thumb);
   }
@@ -1961,7 +1961,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(() => {
       const msg = document.createElement("p");
-      msg.style.cssText = "padding:10px 14px; color:#aaa; font-size:12px; margin:0;";
+      msg.style.cssText = "padding:10px 14px; color:var(--text-muted); font-size:12px; margin:0;";
       msg.textContent = "Examples unavailable — use a local server or deploy to GitHub Pages.";
       dropList.appendChild(msg);
     });
@@ -1980,3 +1980,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+/* ============================================================
+   Light / dark theme toggle
+   The initial value is applied inline in index.html <head> so the
+   page never flashes the wrong palette; this only handles clicks.
+   ============================================================ */
+(function initThemeToggle() {
+  const STORAGE_KEY = "viscoder-theme";
+  const root = document.documentElement;
+  const btn = document.getElementById("themeToggle");
+
+  function apply(theme) {
+    root.setAttribute("data-theme", theme);
+    if (btn) {
+      btn.setAttribute("aria-label",
+        theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+      btn.title = theme === "dark" ? "Light theme" : "Dark theme";
+    }
+  }
+
+  apply(root.getAttribute("data-theme") === "light" ? "light" : "dark");
+  if (!btn) return;
+
+  btn.addEventListener("click", () => {
+    const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    apply(next);
+    try { localStorage.setItem(STORAGE_KEY, next); } catch (e) { /* private mode */ }
+  });
+})();
