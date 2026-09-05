@@ -17,6 +17,10 @@
   --accent-ring: rgba(63, 74, 219, 0.28);
   --on-accent: #ffffff;
 
+  /* second accent: the orange of the realism / metaphor icons */
+  --orange: #f06951;
+  --orange-soft: rgba(240, 105, 81, 0.12);
+
   /* surfaces */
   --bg: #e9eaef;
   --surface: #ffffff;          /* panels */
@@ -73,6 +77,9 @@
   --accent-soft: rgba(108, 117, 239, 0.16);
   --accent-ring: rgba(108, 117, 239, 0.35);
   --on-accent: #10121c;
+
+  --orange: #f06951;
+  --orange-soft: rgba(240, 105, 81, 0.18);
 
   --bg: #1e1e1e;
   --surface: #2b2b2b;
@@ -1045,4 +1052,29 @@ select[multiple] option:checked,
   background: var(--accent-soft) linear-gradient(0deg, var(--accent-soft), var(--accent-soft));
   color: var(--text);
   font-weight: 600;
+}
+
+/* ============================================================
+   Panel accents
+   Left panel (the visualization's own metadata) stays neutral; the
+   right panel - visual elements and their realism / familiarity /
+   metaphor dimensions - carries the orange of the dimension icons.
+   ============================================================ */
+#leftPanel .section-title {
+  border-bottom-color: var(--text);
+}
+
+#rightPanel .section-title {
+  border-bottom-color: var(--orange);
+}
+
+/* comment toggle on the realism / familiarity / proximity row */
+.element-semantic-row .comment-toggle {
+  background-color: var(--orange-soft);
+  color: var(--orange);
+  border-bottom: 2px solid transparent;   /* reserve the space so nothing jumps */
+}
+
+.element-semantic-row .comment-toggle.active {
+  border-bottom-color: var(--orange);
 }
