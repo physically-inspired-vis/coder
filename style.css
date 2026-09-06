@@ -965,20 +965,20 @@ select[multiple],
 
 /* ============================================================
    Light / dark toggle
-   Sits beside the Presentation dropdown; the theme itself lives on
+   Pinned to the top-right corner; the theme itself lives on
    <html data-theme="...">.
    ============================================================ */
-.theme-field {
-  margin-left: 12px;
-}
-
 .theme-toggle {
-  width: 34px;                   /* same height as the select beside it */
+  position: fixed;
+  top: 20px;
+  right: 26px;                   /* clears the right panel's scrollbar */
+  z-index: 6000;
+
+  width: 34px;
   height: 34px;
   display: grid;
   place-items: center;
   padding: 0;
-  margin-left: 5px;              /* line up with the fields beside it */
 
   border: 1px solid var(--border);
   border-radius: 6px;
