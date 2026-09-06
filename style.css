@@ -449,11 +449,15 @@ textarea {
 
 .link-field {
   min-height: 30px;              /* give it more room than a single-line input */
-  padding: 8px;                  /* comfortable padding */
   line-height: 1.4;
-  /* resize: vertical;               */
   width: 100%;                   /* keep same full-width behavior as other fields */
   box-sizing: border-box;
+}
+
+.link-field input {
+  padding: 8px;                  /* comfortable padding */
+  width: 100%;
+  box-sizing: border-box;        /* without this the padding + border overflow the panel */
 }
 
 .description-field textarea {
@@ -961,45 +965,40 @@ select[multiple],
 
 /* ============================================================
    Light / dark toggle
-   A quiet 30px puck in the bottom-right corner: mostly invisible
-   until you hover it. Theme lives on <html data-theme="...">.
+   Sits beside the Presentation dropdown; the theme itself lives on
+   <html data-theme="...">.
    ============================================================ */
-.theme-toggle {
-  position: fixed;
-  right: 14px;
-  bottom: 14px;
-  z-index: 6000;
+.theme-field {
+  margin-left: 12px;
+}
 
-  width: 30px;
-  height: 30px;
+.theme-toggle {
+  width: 34px;                   /* same height as the select beside it */
+  height: 34px;
   display: grid;
   place-items: center;
   padding: 0;
+  margin-left: 5px;              /* line up with the fields beside it */
 
   border: 1px solid var(--border);
-  border-radius: 50%;
-  background: var(--surface);
+  border-radius: 6px;
+  background: var(--input-bg);
   color: var(--text-muted);
-  box-shadow: var(--shadow-card);
   cursor: pointer;
-  opacity: 0.4;
-  transition: opacity 160ms ease, color 160ms ease,
-              border-color 160ms ease, transform 160ms ease;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
-  opacity: 1;
-  background: var(--surface);
+  background: var(--input-bg);
   color: var(--accent);
   border-color: var(--accent);
   outline: none;
-  transform: translateY(-1px);
 }
 
 .theme-toggle svg {
-  width: 15px;
-  height: 15px;
+  width: 19px;
+  height: 19px;
   display: block;
   fill: none;
   stroke: currentColor;
