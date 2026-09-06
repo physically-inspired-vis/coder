@@ -13,13 +13,9 @@
   /* brand */
   --accent: #3f4adb;
   --accent-strong: #333dbd;
-  --select-highlight: #e4e6eb;   /* selected rows in the multi-selects */
+  --accent-soft: rgba(63, 74, 219, 0.10);
   --accent-ring: rgba(63, 74, 219, 0.28);
   --on-accent: #ffffff;
-
-  /* second accent: the orange of the realism / metaphor icons */
-  --orange: #f06951;
-  --orange-soft: rgba(240, 105, 81, 0.12);
 
   /* surfaces */
   --bg: #e9eaef;
@@ -74,12 +70,9 @@
 
   --accent: #6c75ef;
   --accent-strong: #838bff;
-  --select-highlight: #4a4a4a;
+  --accent-soft: rgba(108, 117, 239, 0.16);
   --accent-ring: rgba(108, 117, 239, 0.35);
   --on-accent: #10121c;
-
-  --orange: #f06951;
-  --orange-soft: rgba(240, 105, 81, 0.18);
 
   --bg: #1e1e1e;
   --surface: #2b2b2b;
@@ -296,7 +289,7 @@ textarea {
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 2px solid var(--text);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 4px;
 }
 
@@ -376,7 +369,7 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text);
-  border-bottom: 2px solid var(--text);
+  border-bottom: 2px solid var(--accent);
   margin-bottom: 10px;
   padding-bottom: 5px;
   letter-spacing: 0.5px;
@@ -1045,28 +1038,11 @@ textarea {
   box-shadow: var(--shadow-pop);
 }
 
-/* Selected rows in the multi-selects: a plain grey band that follows the
-   theme (the gradient is the only way to override Chrome's own colour on
-   an unfocused select) */
+/* Selected rows in the multi-selects use the accent tint instead of the
+   browser's default grey band */
 select[multiple] option:checked,
 .material-props-multi option:checked {
-  background: var(--select-highlight) linear-gradient(0deg, var(--select-highlight), var(--select-highlight));
+  background: var(--accent-soft) linear-gradient(0deg, var(--accent-soft), var(--accent-soft));
   color: var(--text);
   font-weight: 600;
-}
-
-/* The comment toggle on the realism / familiarity / metaphor row is
-   marked with the orange of those icons - underline only, no fill. */
-.element-semantic-row .comment-toggle {
-  border-bottom: 2px solid transparent;   /* reserve the space so nothing jumps */
-}
-
-.element-semantic-row .comment-toggle.active {
-  border-bottom-color: var(--orange);
-}
-
-/* The left-column metadata panels stay neutral - no accent colour,
-   so their comment toggles are underlined in the text colour too. */
-.metadata-panel .comment-toggle.active {
-  border-bottom-color: var(--text);
 }

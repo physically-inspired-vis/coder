@@ -594,7 +594,6 @@ function addVisualElement(data = {}) {
   styleRow.style.gap = "10px";
 
   const semanticRow = document.createElement("div");
-  semanticRow.className = "element-semantic-row";
   semanticRow.style.display = "flex";
   semanticRow.style.alignItems = "center";
   semanticRow.style.gap = "10px";
